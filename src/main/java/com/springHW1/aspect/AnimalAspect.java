@@ -25,23 +25,23 @@ public class AnimalAspect {
 
     }
 
-    @Pointcut("execution(* com.spring3.zoo.impl.*.voice())")
+    @Pointcut("execution(* com.springHW1.zoo.impl.*.voice())")
     public void voicePoint() {
     }
 
-    @Pointcut("execution (* com.spring3.zoo.Job.job())")
+    @Pointcut("execution (* com.springHW1.zoo.Job.job())")
     public void anyAnimalMethod() {
     }
 
-    @Pointcut("within (com.spring3.zoo.*)")
+    @Pointcut("within (com.springHW1.zoo.*)")
     public void anyAnimalMethodWithWithIn() {
     }
 
-    @Pointcut("@annotation(com.spring3.aspect.annotationMarker.Marker)")
+    @Pointcut("@annotation(com.springHW1.aspect.annotationMarker.Marker)")
     public void annotationPointcut() {
     }
 
-    @Pointcut("@within(com.spring3.aspect.annotationMarker.Marker)")
+    @Pointcut("@within(com.springHW1.aspect.annotationMarker.Marker)")
     public void annotationWithInPointcut() {
     }
 
