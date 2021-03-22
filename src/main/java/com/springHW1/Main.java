@@ -6,12 +6,14 @@ import com.springHW1.zoo.AnimalService;
 import com.springHW1.zoo.Zoo;
 import com.springHW1.zoo.food.Food;
 import com.springHW1.zoo.food.FoodType;
+
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 import java.time.LocalDateTime;
 
 public class Main {
+
     public static void main(String[] args) {
         ApplicationContext context = getAnnotationContext("annotationConfiguration");
         Zoo setterZoo = context.getBean("zoo", Zoo.class);
